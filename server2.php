@@ -7,12 +7,12 @@ $email    = "";
 $errors = array();
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'notebook');
+$db = mysqli_connect('/', 'root', '', 'notebook');
 
 // REGISTER USER
 if (isset($_POST['message_user'])) {
   // receive all input values from the form
-  
+
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $message = mysqli_real_escape_string($db, $_POST['message']);
 

@@ -6,7 +6,7 @@ $username = "";
 $email    = "";
 $errors = array();
 
-$db = mysqli_connect('localhost', 'root', '', 'notebook');
+$db = mysqli_connect('/', 'root', '', 'notebook');
 if ($db->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
